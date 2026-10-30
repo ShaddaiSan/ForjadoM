@@ -1,105 +1,268 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000">
-<title>FORJADO Marketing Digital | Diseño web, contenido y redes sociales</title>
-<meta name="description" content="Agencia de marketing digital: diseño web, creación de contenido y gestión de redes sociales para negocios. Prueba gratuita de 30 días.">
-<link rel="canonical" href="https://TU-DOMINIO.pages.dev/">
-<meta property="og:title" content="FORJADO Marketing Digital"><meta property="og:description" content="Tu negocio, en el siguiente nivel."><meta property="og:type" content="website"><meta property="og:locale" content="es_ES">
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="css/styles.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"FORJADO Marketing Digital","slogan":"Tu negocio, en el siguiente nivel","description":"Diseño web, creación de contenido y gestión de redes sociales."}</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FORJADO Marketing Digital — Tu negocio, al siguiente nivel</title>
+<meta name="description" content="Diseño web, contenido digital y redes sociales para restaurantes y negocios locales de Montréal y la Rive-Sud. Solicita una consulta.">
+<meta name="theme-color" content="#0A0A0A">
+<meta property="og:type" content="website"><meta property="og:site_name" content="FORJADO Marketing Digital">
+<meta property="og:title" content="FORJADO Marketing Digital — Tu negocio, al siguiente nivel">
+<meta property="og:description" content="Diseño web, contenido digital y redes sociales para negocios locales de Montréal y la Rive-Sud.">
+<meta property="og:image" content="assets/og.svg">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"FORJADO Marketing Digital","slogan":"Tu negocio, al siguiente nivel.","areaServed":["Montréal","Rive-Sud"],"serviceType":["Diseño web","Contenido digital","Marketing y redes sociales"]}</script>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<a class="skip" href="#main">Saltar al contenido</a>
-<header class="top"><div class="wrap bar">
-<a class="brand" href="#inicio" aria-label="FORJADO Marketing Digital, inicio"><img src="assets/img/logo.svg" alt="" width="34" height="34"><span>FORJADO<small>MARKETING DIGITAL</small></span></a>
-<button class="nav-toggle" aria-expanded="false" aria-controls="nav" type="button">Menú</button>
-<nav class="nav" id="nav" aria-label="Principal">
-<a href="#servicios">Servicios</a><a href="#oferta">Oferta</a><a href="#portafolio">Portafolio</a><a href="#proceso">Proceso</a><a href="#faq">Preguntas</a>
-<a class="btn sm" href="#contacto">Solicitar información</a></nav>
-</div></header>
+<a class="skip" href="#main" data-i18n="foot.skip">Saltar al contenido</a>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="FORJADO Marketing Digital"><img src="assets/logo.svg" alt="" width="34" height="34"><span>FORJADO</span></a>
+  <nav id="menu" aria-label="Principal">
+    <a href="#servicios" data-i18n="nav.services">Servicios</a>
+    <a href="#portafolio" data-i18n="nav.portfolio">Portafolio</a>
+    <a href="#proceso" data-i18n="nav.process">Proceso</a>
+    <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
+  </nav>
+  <div class="nav-end">
+    <div class="lang" role="group" aria-label="Idioma / Langue / Language">
+      <button type="button" data-lang="es" aria-pressed="true">ES</button><button type="button" data-lang="fr" aria-pressed="false">FR</button><button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="btn btn-sm" href="#contacto" data-i18n="nav.cta">Consulta</a>
+    <button class="burger" id="burger" type="button" aria-controls="menu" aria-expanded="false" data-i18n-aria="nav.menu" aria-label="Abrir menú"><span></span><span></span></button>
+  </div>
+</header>
+
 <main id="main">
-<section class="hero" id="inicio"><div class="wrap">
-<div class="heat" aria-hidden="true"></div>
-<h1>Forjamos la presencia digital que tu negocio necesita para crecer</h1>
-<p class="slogan">Tu negocio, en el siguiente nivel</p>
-<p class="lead">Diseño web, contenido y redes sociales para negocios que quieren comunicar con claridad lo que ofrecen.</p>
-<div class="acts"><a class="btn" href="#contacto">Solicitar información</a><a class="btn o" href="#oferta">Ver la prueba gratuita de 30 días</a></div>
-</div></section>
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"><span class="bigF">F</span><i class="line l1"></i><i class="line l2"></i><i class="spark"></i></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="kicker"><span class="dot"></span><span data-i18n="hero.kicker">Montréal · Rive-Sud</span></p>
+      <h1 data-i18n="hero.title">Tu negocio merece verse tan bien como trabaja.</h1>
+      <p class="sub" data-i18n="hero.sub">Construimos una presencia digital que hace destacar tu negocio, conecta con tus clientes y te prepara para crecer.</p>
+      <div class="cta-row">
+        <a class="btn" href="#contacto"><span data-i18n="hero.cta1">Solicitar una consulta</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#servicios" data-i18n="hero.cta2">Descubrir servicios</a>
+      </div>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="win" data-depth="14">
+        <div class="win-bar"><i></i><i></i><i></i></div>
+        <div class="win-body"><b></b><b class="s"></b><p></p><p class="s"></p><u></u><div class="ph"></div></div>
+      </div>
+      <div class="phone" data-depth="28">
+        <div class="ph-top"></div><div class="ph-img"></div><b></b><p></p><p class="s"></p><u></u>
+      </div>
+      <div class="chip c1" data-depth="40"><svg viewBox="0 0 24 24"><path d="M4 16l5-5 4 4 7-8"/></svg></div>
+      <div class="chip c2" data-depth="20"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><rect x="3" y="3" width="18" height="18" rx="5"/></svg></div>
+    </div>
+  </div>
+  <a class="scroll" href="#intro"><span data-i18n="hero.scroll">Desliza</span><i></i></a>
+</section>
 
-<section id="servicios"><div class="wrap">
-<h2>Servicios</h2><p class="mu">Tres áreas que se complementan. Puedes contratar una o combinarlas.</p>
-<div class="grid">
-<article class="card"><h3>Diseño web</h3><p>Sitios rápidos, claros y adaptados a móvil, pensados para que tus clientes te encuentren y te contacten.</p><ul><li>Diseño a medida de tu marca</li><li>Adaptado a móvil y buscadores</li><li>Botón directo a WhatsApp o correo</li></ul></article>
-<article class="card"><h3>Creación de contenido</h3><p>Piezas gráficas y textos con un estilo coherente, listos para publicar.</p><ul><li>Publicaciones y carruseles</li><li>Textos y calendario editorial</li><li>Guía de estilo visual básica</li></ul></article>
-<article class="card"><h3>Gestión de redes sociales</h3><p>Publicamos y mantenemos tus perfiles con constancia para que tu comunicación no dependa del tiempo libre.</p><ul><li>Programación de publicaciones</li><li>Respuesta a comentarios y mensajes</li><li>Informe mensual de actividad</li></ul></article>
-</div></div></section>
+<!-- INTRO -->
+<section class="sec" id="intro">
+  <div class="wrap split">
+    <div>
+      <p class="label rv" data-i18n="intro.label">01 — La realidad</p>
+      <h2 class="rv" data-i18n="intro.title">No basta con ser bueno. También tienen que verlo.</h2>
+    </div>
+    <div class="rv">
+      <p class="big" data-i18n="intro.p1">Un cliente decide en segundos.</p>
+      <p class="muted" data-i18n="intro.p2">FORJADO cuida cómo se ve y cómo se comunica tu negocio.</p>
+      <ul class="pains">
+        <li data-i18n="intro.i1">Web anticuada o lenta</li><li data-i18n="intro.i2">Imágenes que no hacen justicia</li><li data-i18n="intro.i3">Demasiada dependencia de redes y plataformas</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-<section id="oferta"><div class="wrap">
-<h2>Prueba gratuita de 30 días</h2>
-<div class="offer">
-<div><h3>Qué incluye</h3><ul>
-<li>Revisión de tu presencia digital actual</li>
-<li>Una propuesta de página web de una sola sección, con tu marca</li>
-<li>Hasta 8 publicaciones diseñadas para una red social</li>
-<li>Gestión de un solo perfil durante los 30 días</li></ul></div>
-<div><h3>Qué no incluye</h3><ul class="no">
-<li>Publicidad pagada ni presupuesto de anuncios</li>
-<li>Dominio, alojamiento ni herramientas de pago</li>
-<li>Producción de fotografía o vídeo</li>
-<li>Más de una red social ni más de una página</li></ul>
-<p class="note">Sin tarjeta y sin compromiso. Al terminar, decides si quieres continuar.</p>
-<a class="btn" href="#contacto">Quiero la prueba gratuita</a></div>
-</div></div></section>
+<!-- SERVICIOS -->
+<section class="sec alt" id="servicios">
+  <div class="wrap">
+    <p class="label rv" data-i18n="serv.label">02 — Servicios</p>
+    <h2 class="rv" data-i18n="serv.title">Tres frentes. Una sola imagen.</h2>
+    <div class="services">
+      <article class="svc rv">
+        <span class="num">01</span>
+        <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="9" width="38" height="30" rx="2"/><path d="M5 17h38M12 13h.01M17 13h.01M14 26h12M14 31h20"/></svg>
+        <h3 data-i18n="s1.title">Diseño web</h3>
+        <p data-i18n="s1.desc"></p>
+        <p class="ben"><small data-i18n="serv.benefit">Para tu negocio</small><span data-i18n="s1.ben"></span></p>
+      </article>
+      <article class="svc rv">
+        <span class="num">02</span>
+        <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="12" width="38" height="27" rx="2"/><circle cx="24" cy="25" r="8"/><path d="M17 12l3-5h8l3 5"/></svg>
+        <h3 data-i18n="s2.title">Contenido digital</h3>
+        <p data-i18n="s2.desc"></p>
+        <p class="ben"><small data-i18n="serv.benefit">Para tu negocio</small><span data-i18n="s2.ben"></span></p>
+      </article>
+      <article class="svc rv">
+        <span class="num">03</span>
+        <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 38V10M6 38h36"/><path d="M12 30l9-9 6 6 13-14"/><path d="M33 13h7v7"/></svg>
+        <h3 data-i18n="s3.title">Marketing y redes sociales</h3>
+        <p data-i18n="s3.desc"></p>
+        <p class="ben"><small data-i18n="serv.benefit">Para tu negocio</small><span data-i18n="s3.ben"></span></p>
+      </article>
+    </div>
+  </div>
+</section>
 
-<section id="portafolio"><div class="wrap">
-<h2>Portafolio de demostración</h2><p class="mu">Estos proyectos son ficticios. Muestran el tipo de trabajo que hacemos; no son clientes reales ni resultados reales.</p>
-<div class="grid">
-<article class="card"><div class="mock" role="img" aria-label="Maqueta ilustrativa de un sitio web"><i></i><i></i><i></i></div><span class="tag">Proyecto ficticio de demostración</span><h3>Café Ejemplo</h3><p>Sitio web de una sola página con carta, horario y botón de contacto.</p></article>
-<article class="card"><div class="mock m2" role="img" aria-label="Maqueta ilustrativa de una cuadrícula de publicaciones"><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="tag">Proyecto ficticio de demostración</span><h3>Estudio Demo</h3><p>Cuadrícula de publicaciones y calendario de contenido para Instagram.</p></article>
-<article class="card"><div class="mock m3" role="img" aria-label="Maqueta ilustrativa de una pieza para redes"><i></i><i></i><i></i></div><span class="tag">Proyecto ficticio de demostración</span><h3>Tienda Muestra</h3><p>Piezas gráficas y plan mensual de publicaciones para una tienda.</p></article>
-</div></div></section>
+<!-- PORTAFOLIO -->
+<section class="sec work-sec" id="portafolio">
+  <span class="ghost" aria-hidden="true">FORJADO</span>
+  <div class="wrap">
+    <div class="work-head">
+      <h2 class="rv orange" data-i18n="pc.title">Portafolio</h2>
+      <p class="mono rv"><span>// 01</span><span data-i18n="pc.t1"></span></p>
+      <p class="mono rv"><span>// 02</span><span data-i18n="pc.t2"></span></p>
+      <h3 class="rv work-claim" data-i18n="port.title">Así se ve el estándar FORJADO.</h3>
+    </div>
+    <p class="note rv" data-i18n="port.note"></p>
+    <div class="ctrl rv"><button type="button" class="cbtn" id="prev" data-i18n="pc.back">Atrás</button><button type="button" class="cbtn on" id="next" data-i18n="pc.next">Siguiente</button><span class="count" aria-live="polite"><b id="cur">01</b> / 04</span></div>
+  </div>
+  <div class="track" id="track" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Portafolio">
+    <article class="case" aria-roledescription="slide">
+        <div class="ticket">
+          <div class="bar" aria-hidden="true"></div>
+          <div class="tk-top"><span>// <span data-i18n="pc.case">caso</span> 01</span><em data-i18n="k1.a"></em><em data-i18n="k1.b"></em></div>
+          <p><b data-i18n="pc.niche">Nicho:</b> <span data-i18n="k1.n"></span></p>
+          <p><b data-i18n="pc.task">Objetivo:</b> <span data-i18n="k1.t"></span></p>
+          <p><b data-i18n="pc.sol">Solución:</b> <span data-i18n="k1.s"></span></p>
+          <span class="tk-demo">// <span data-i18n="pc.demo2">Demo</span></span>
+        </div>
+        <figure><img src="assets/p-web.svg" alt="" data-i18n-alt="p1.alt" width="800" height="600" loading="lazy"><figcaption><span data-i18n="p1.t"></span><em data-i18n="port.demo">Concepto · Demo</em></figcaption></figure>
+      </article>
+    <article class="case" aria-roledescription="slide">
+        <div class="ticket">
+          <div class="bar" aria-hidden="true"></div>
+          <div class="tk-top"><span>// <span data-i18n="pc.case">caso</span> 02</span><em data-i18n="k2.a"></em><em data-i18n="k2.b"></em></div>
+          <p><b data-i18n="pc.niche">Nicho:</b> <span data-i18n="k2.n"></span></p>
+          <p><b data-i18n="pc.task">Objetivo:</b> <span data-i18n="k2.t"></span></p>
+          <p><b data-i18n="pc.sol">Solución:</b> <span data-i18n="k2.s"></span></p>
+          <span class="tk-demo">// <span data-i18n="pc.demo2">Demo</span></span>
+        </div>
+        <figure><img src="assets/p-resto.svg" alt="" data-i18n-alt="p2.alt" width="800" height="600" loading="lazy"><figcaption><span data-i18n="p2.t"></span><em data-i18n="port.demo">Concepto · Demo</em></figcaption></figure>
+      </article>
+    <article class="case" aria-roledescription="slide">
+        <div class="ticket">
+          <div class="bar" aria-hidden="true"></div>
+          <div class="tk-top"><span>// <span data-i18n="pc.case">caso</span> 03</span><em data-i18n="k3.a"></em><em data-i18n="k3.b"></em></div>
+          <p><b data-i18n="pc.niche">Nicho:</b> <span data-i18n="k3.n"></span></p>
+          <p><b data-i18n="pc.task">Objetivo:</b> <span data-i18n="k3.t"></span></p>
+          <p><b data-i18n="pc.sol">Solución:</b> <span data-i18n="k3.s"></span></p>
+          <span class="tk-demo">// <span data-i18n="pc.demo2">Demo</span></span>
+        </div>
+        <figure><img src="assets/p-food.svg" alt="" data-i18n-alt="p3.alt" width="800" height="600" loading="lazy"><figcaption><span data-i18n="p3.t"></span><em data-i18n="port.demo">Concepto · Demo</em></figcaption></figure>
+      </article>
+    <article class="case" aria-roledescription="slide">
+        <div class="ticket">
+          <div class="bar" aria-hidden="true"></div>
+          <div class="tk-top"><span>// <span data-i18n="pc.case">caso</span> 04</span><em data-i18n="k4.a"></em><em data-i18n="k4.b"></em></div>
+          <p><b data-i18n="pc.niche">Nicho:</b> <span data-i18n="k4.n"></span></p>
+          <p><b data-i18n="pc.task">Objetivo:</b> <span data-i18n="k4.t"></span></p>
+          <p><b data-i18n="pc.sol">Solución:</b> <span data-i18n="k4.s"></span></p>
+          <span class="tk-demo">// <span data-i18n="pc.demo2">Demo</span></span>
+        </div>
+        <figure><img src="assets/p-social.svg" alt="" data-i18n-alt="p4.alt" width="800" height="600" loading="lazy"><figcaption><span data-i18n="p4.t"></span><em data-i18n="port.demo">Concepto · Demo</em></figcaption></figure>
+      </article>
+  </div>
+</section>
 
-<section id="proceso"><div class="wrap">
-<h2>Cómo trabajamos</h2>
-<ol class="steps">
-<li><h3>Conversamos</h3><p>Nos cuentas qué haces, a quién te diriges y qué necesitas.</p></li>
-<li><h3>Planificamos</h3><p>Definimos qué se hará, en qué plazos y con qué alcance.</p></li>
-<li><h3>Forjamos</h3><p>Diseñamos y producimos la web y el contenido, con revisiones contigo.</p></li>
-<li><h3>Publicamos y ajustamos</h3><p>Lo ponemos en marcha y lo mejoramos con tus comentarios.</p></li>
-</ol></div></section>
+<!-- PROCESO -->
+<section class="sec alt" id="proceso">
+  <div class="wrap">
+    <p class="label rv" data-i18n="proc.label">04 — Proceso</p>
+    <h2 class="rv" data-i18n="proc.title">De la idea a una presencia digital profesional.</h2>
+    <ol class="steps">
+      <li class="rv"><span>01</span><h3 data-i18n="st1.t"></h3><p data-i18n="st1.d"></p></li>
+      <li class="rv"><span>02</span><h3 data-i18n="st2.t"></h3><p data-i18n="st2.d"></p></li>
+      <li class="rv"><span>03</span><h3 data-i18n="st3.t"></h3><p data-i18n="st3.d"></p></li>
+      <li class="rv"><span>04</span><h3 data-i18n="st4.t"></h3><p data-i18n="st4.d"></p></li>
+    </ol>
+  </div>
+</section>
 
-<section id="faq"><div class="wrap">
-<h2>Preguntas frecuentes</h2>
-<details><summary>¿La prueba gratuita tiene algún coste?</summary><p>No. Incluye solo lo indicado en la sección de la oferta. Cualquier cosa fuera de ese alcance se acuerda antes y por escrito.</p></details>
-<details><summary>¿Necesito dar datos de pago para empezar?</summary><p>No. Para la prueba gratuita no pedimos tarjeta.</p></details>
-<details><summary>¿Qué necesito aportar?</summary><p>Tu logotipo si lo tienes, información de tu negocio y acceso a la red social que quieras gestionar.</p></details>
-<details><summary>¿Garantizan resultados concretos?</summary><p>No prometemos cifras de ventas ni seguidores. Trabajamos para que tu comunicación sea más clara, constante y profesional.</p></details>
-<details><summary>¿Puedo contratar solo un servicio?</summary><p>Sí. Puedes elegir diseño web, contenido o redes sociales por separado, o combinarlos.</p></details>
-<details><summary>¿Cómo me pongo en contacto?</summary><p>Con el formulario de esta página, que prepara un mensaje de WhatsApp o de correo, o escribiéndonos directamente.</p></details>
-</div></section>
+<!-- OFERTA -->
+<section class="offer" id="oferta">
+  <div class="wrap offer-grid">
+    <div class="rv">
+      <p class="label dark" data-i18n="offer.label">Oferta de introducción</p>
+      <h2 data-i18n="offer.title">30 días para transformar tu presencia digital.</h2>
+      <p class="offer-p" data-i18n="offer.p"></p>
+      <a class="btn btn-dark" href="#contacto" data-service="4"><span data-i18n="offer.cta">Quiero conocer la oferta</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+    </div>
+    <div class="rv days" aria-hidden="true"><b>30</b></div>
+    <ul class="rv incl">
+      <li data-i18n="offer.l1"></li><li data-i18n="offer.l2"></li><li data-i18n="offer.l3"></li><li data-i18n="offer.l4"></li>
+    </ul>
+  </div>
+</section>
 
-<section id="contacto"><div class="wrap contact">
-<div><h2>Solicitar información</h2>
-<p class="mu">Rellena los datos y elige cómo enviarlos. Este formulario no guarda nada en un servidor: abre WhatsApp o tu correo con el mensaje ya escrito, y tú lo envías.</p>
-<p>WhatsApp: <a href="#contacto" data-wa="Hola, quiero información sobre FORJADO Marketing Digital." data-phone-text>Escríbenos por WhatsApp</a><br>Correo: <a href="#contacto" data-mail data-email-text>Escríbenos por correo</a></p></div>
-<form id="form-contacto" novalidate>
-<label for="nombre">Nombre</label><input id="nombre" name="nombre" autocomplete="name" required>
-<label for="negocio">Tu negocio</label><input id="negocio" name="negocio" autocomplete="organization" required>
-<label for="servicio">Servicio de interés</label>
-<select id="servicio" name="servicio" required><option>Prueba gratuita de 30 días</option><option>Diseño web</option><option>Creación de contenido</option><option>Gestión de redes sociales</option></select>
-<label for="mensaje">Mensaje (opcional)</label><textarea id="mensaje" name="mensaje"></textarea>
-<div class="fa"><button class="btn" type="submit">Enviar por WhatsApp</button><button class="btn o" type="button" id="btn-correo">Enviar por correo</button></div>
-<p id="estado" role="status" aria-live="polite"></p>
-</form></div></section>
+<!-- NOSOTROS -->
+<section class="sec" id="nosotros">
+  <div class="wrap split">
+    <div>
+      <p class="label rv" data-i18n="about.label">05 — Sobre FORJADO</p>
+      <h2 class="rv" data-i18n="about.title">No vendemos solo diseños. Construimos presencia.</h2>
+    </div>
+    <div class="rv">
+      <p class="big" data-i18n="about.p1"></p>
+      <p class="muted" data-i18n="about.p2"></p>
+      <ul class="vals"><li data-i18n="about.v1">Diseño</li><li data-i18n="about.v2">Estrategia</li><li data-i18n="about.v3">Creatividad</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="sec alt contact" id="contacto">
+  <div class="wrap split">
+    <div>
+      <p class="label rv" data-i18n="c.label">06 — Contacto</p>
+      <h2 class="rv" data-i18n="c.title">Es momento de llevar tu negocio al siguiente nivel.</h2>
+      <p class="muted rv" data-i18n="c.sub"></p>
+      <p class="rv wa-wrap" id="waWrap" hidden><a class="btn btn-ghost" id="waBtn" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4.2A8 8 0 1 1 8.300 18.800z"/></svg><span data-i18n="f.wa">Escribir por WhatsApp</span></a></p>
+    </div>
+    <form id="form" class="rv" novalidate>
+      <div class="row2">
+        <label><span data-i18n="f.name">Nombre</span><input name="name" autocomplete="name" required></label>
+        <label><span data-i18n="f.biz">Nombre del negocio</span><input name="business" autocomplete="organization" required></label>
+      </div>
+      <div class="row2">
+        <label><span data-i18n="f.email">Correo electrónico</span><input name="email" type="email" autocomplete="email" required></label>
+        <label><span data-i18n="f.phone">Teléfono</span><input name="phone" type="tel" autocomplete="tel"></label>
+      </div>
+      <label><span data-i18n="f.service">Servicio que necesitas</span>
+        <select name="service" id="service" required>
+          <option value="" data-i18n="f.opt0">Selecciona una opción</option>
+          <option value="web" data-i18n="f.opt1">Diseño web</option><option value="content" data-i18n="f.opt2">Contenido digital</option>
+          <option value="social" data-i18n="f.opt3">Marketing y redes sociales</option><option value="offer30" data-i18n="f.opt4">Oferta de 30 días</option><option value="unsure" data-i18n="f.opt5">Aún no lo sé</option>
+        </select></label>
+      <label><span data-i18n="f.msg">Mensaje</span><textarea name="message" rows="4"></textarea></label>
+      <input class="hp" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn" type="submit" id="send"><span data-i18n="f.send">Enviar consulta</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+      <p class="status" id="status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
 </main>
-<footer><div class="wrap">
-<div class="fg">
-<div><h2>FORJADO Marketing Digital</h2><p class="note">Tu negocio, en el siguiente nivel.</p></div>
-<div><h2>Contacto</h2><ul><li><a href="#contacto" data-wa="Hola, quiero información sobre FORJADO Marketing Digital.">WhatsApp</a></li><li><a href="#contacto" data-mail>Correo electrónico</a></li></ul></div>
-<div><h2>Legal</h2><ul><li><a href="paginas/aviso-legal.html">Aviso legal</a></li><li><a href="paginas/privacidad.html">Privacidad y cookies</a></li></ul></div>
-</div>
-<p class="copy">© 2026 FORJADO Marketing Digital. Los proyectos del portafolio son ficticios.</p>
-</div></footer>
-<script src="js/config.js"></script><script src="js/main.js"></script>
-</body></html>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <a class="brand" href="#top" aria-label="FORJADO"><img src="assets/logo.svg" alt="" width="30" height="30"><span>FORJADO</span></a>
+    <p><span data-i18n="foot.tag">Tu negocio, al siguiente nivel.</span> · <span data-i18n="foot.area">Montréal y Rive-Sud</span></p>
+    <p>© <span id="year"></span> FORJADO Marketing Digital · <a href="privacidad.html" data-i18n="foot.priv">Política de privacidad</a> · <a href="#top" data-i18n="foot.top">Volver arriba</a></p>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="i18n.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

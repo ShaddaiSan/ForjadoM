@@ -1,6 +1,7 @@
-/* CONFIGURA AQUÍ TUS DATOS DE CONTACTO (ver README) */
-window.FORJADO = {
-  whatsapp: "34600000000",          // país + número, solo dígitos, sin "+" ni espacios
-  email: "hola@tu-dominio.com",     // correo real de la agencia
-  whatsappConfigurado: false        // cámbialo a true cuando pongas tu número real
+/* Configuración editable de FORJADO — rellena estos valores antes de publicar. */
+window.FORJADO_CONFIG = {
+  // Número de WhatsApp con código de país y solo dígitos. Ej.: "15145550123". Vacío = el botón se oculta.
+  WHATSAPP_NUMBER: "",
+  // URL de un servicio de formularios (Formspree, Basin, Getform, Web3Forms...). Vacío = el formulario usa WhatsApp si hay número.
+  FORM_ENDPOINT: ""
 };

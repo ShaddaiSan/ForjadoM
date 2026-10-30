@@ -1,36 +1,20 @@
-# FORJADO Marketing Digital — sitio web estático
+# FORJADO Marketing Digital
 
-HTML, CSS y JavaScript puros. Sin backend, sin base de datos, sin dependencias de pago.
+Sitio web oficial de FORJADO — *Tu negocio, al siguiente nivel.* Sitio estático (HTML/CSS/JS), sin build, en español (por defecto), francés e inglés.
+
+## Antes de publicar (editar `config.js`)
+- `WHATSAPP_NUMBER`: número con código de país, solo dígitos (ej. `15145550123`). Vacío = el botón de WhatsApp se oculta.
+- `FORM_ENDPOINT`: URL de Formspree / Basin / Web3Forms / Getform. Vacío = el formulario usa WhatsApp si hay número; si no, avisa que no está conectado.
 
 ## Estructura
-```
-index.html          Página principal
-404.html            Página de error
-css/styles.css      Estilos
-js/config.js        TUS DATOS DE CONTACTO (edita este archivo)
-js/main.js          Menú móvil y formulario
-assets/img/         Logotipo y favicon (SVG propios, sin derechos de terceros)
-paginas/            Aviso legal y privacidad/cookies
-robots.txt, sitemap.xml, _headers
-```
+- `index.html` — página y SEO · `styles.css` — diseño · `main.js` — idiomas, slider, formulario, animaciones
+- `privacidad.html` + `privacy.js` — política de privacidad ES/FR/EN · `404.html` · `_headers` (para Cloudflare Pages/Netlify; GitHub Pages lo ignora)
+- `i18n.js` — todos los textos ES/FR/EN · `assets/` — logo e ilustraciones originales (SVG)
 
-## Antes de publicar (obligatorio)
-1. **js/config.js**: pon tu número de WhatsApp real (país + número, solo dígitos), tu correo real y cambia `whatsappConfigurado` a `true`. Hasta entonces el botón de WhatsApp del formulario muestra un aviso y los enlaces usan datos de ejemplo.
-2. **Dominio**: reemplaza `TU-DOMINIO.pages.dev` por tu dirección real en `index.html` (canonical), `robots.txt` y `sitemap.xml`.
-3. **Páginas legales**: completa los datos marcados `[COMPLETAR]` en `paginas/`. Son plantillas: haz que un profesional las revise según la ley de tu país.
-4. **Oferta de 30 días**: el alcance escrito en la sección "Prueba gratuita" es una propuesta. Ajústalo a lo que realmente puedes entregar.
-
-## Cómo funciona el formulario
-No envía datos a ningún servidor. Al pulsar "Enviar por WhatsApp" abre WhatsApp con el mensaje escrito; "Enviar por correo" abre tu cliente de correo. La persona debe pulsar enviar. Si quieres recibir formularios directamente, necesitas un servicio externo (por ejemplo Formspree o Cloudflare Workers), que requiere su propia cuenta y configuración.
-
-## Editar
-- Textos: `index.html`. Colores y tipografías: variables al inicio de `css/styles.css`.
-- Portafolio: son 3 proyectos ficticios con maquetas dibujadas en CSS. Cuando tengas trabajos reales y autorización de tus clientes, sustitúyelos y elimina la etiqueta "ficticio".
-- Imágenes: usa solo las que tengas derecho a usar. Colócalas en `assets/img/`.
-
-## Probar en local
-Abre `index.html` en el navegador, o ejecuta `python3 -m http.server` en esta carpeta y entra en http://localhost:8000.
-
-## Publicar en Cloudflare Pages
-**Subida directa:** Cloudflare Dashboard → Workers & Pages → Create → Pages → Upload assets → arrastra el contenido de esta carpeta (o el ZIP descomprimido) → Deploy.
-**Con Git:** sube la carpeta a un repositorio y conéctalo en Pages. Build command: vacío. Output directory: `/`.
+## Pendiente
+- Los casos del portafolio son **demos** rotuladas como tales; reemplázalos por trabajos reales cuando existan.
+- Fotografía real: las ilustraciones SVG son provisionales (el entorno no pudo descargar bancos de imágenes).
+- Cuando tengas dominio: añade `sitemap.xml`, la línea `Sitemap:` en `robots.txt` y la URL canónica; la imagen Open Graph debe ser absoluta.
+- Revisa la política de privacidad con un profesional (Québec: Ley 25).
+- Imagen Open Graph en PNG/JPG (`assets/og.svg` no la muestran todas las redes), dominio y redes sociales.
+- Desarrollo local: `python3 -m http.server`
