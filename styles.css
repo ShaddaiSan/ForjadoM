@@ -146,3 +146,4 @@ input:focus,select:focus,textarea:focus{outline:0;border-color:var(--acc)}input:
 .sign{margin:40px 0 0;max-width:413px;border:1px solid var(--line);position:relative}.sign img{width:100%;height:auto;filter:saturate(.9)}.sign:after{content:"";position:absolute;left:-10px;top:-10px;width:48px;height:48px;border-left:3px solid var(--acc);border-top:3px solid var(--acc)}
 .btn svg[fill]{}.soc{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#fff;transition:color .2s}.soc svg{width:18px;height:18px}.soc:hover{color:var(--acc)}.wa-wrap{margin-top:16px}.wa-wrap:first-of-type{margin-top:30px}.btn-ghost svg path[fill]{fill:currentColor}
 .muted+.wa-wrap{margin-top:30px}
+.foot-in>p:nth-of-type(1){display:flex;gap:20px}
