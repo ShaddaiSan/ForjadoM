@@ -16,5 +16,5 @@ Sitio web oficial de FORJADO — *Tu negocio, al siguiente nivel.* Sitio estáti
 - Fotografía real: las ilustraciones SVG son provisionales (el entorno no pudo descargar bancos de imágenes).
 - Cuando tengas dominio: añade `sitemap.xml`, la línea `Sitemap:` en `robots.txt` y la URL canónica; la imagen Open Graph debe ser absoluta.
 - Revisa la política de privacidad con un profesional (Québec: Ley 25).
-- Imagen Open Graph en PNG/JPG (`assets/og.svg` no la muestran todas las redes), dominio y redes sociales.
+- Imagen Open Graph en PNG/JPG (`assets/og.jpg` no la muestran todas las redes), dominio y redes sociales.
 - Desarrollo local: `python3 -m http.server`
